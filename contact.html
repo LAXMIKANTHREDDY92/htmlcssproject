@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Contact Section Styling */
+#contact {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #086c6b;
+}
+
+/* Form Styling */
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #ff0000; /* Highlighted border color */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Red glow for focus */
+}
+
+/* Button Styling */
+#contact button {
+    background-color: #ff0000; /* Audi red color */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Adjust spacing */
+#contact br {
+    display: none; /* Remove unnecessary breaks for cleaner layout */
+}
+
+</style>
+<body>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+
+            <input type="text" placeholder="Name" required>
+            <br>
+            <br>
+            <input type="email" placeholder="Email" required>
+            <br>
+            <br>
+            <textarea placeholder="Message" required></textarea>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
